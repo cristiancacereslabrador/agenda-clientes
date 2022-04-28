@@ -26,8 +26,11 @@ const Layout = () => {
           </Link>
         </nav>
       </div>
+      
       <div className="md:w-3/4 p-10 md:h-screen overflow-scroll">
-        <Outlet />
+      <h1 className="font-black text-5xl text-blue-900 mb-5">Administración de Clientes</h1> 
+        <Outlet 
+         />
       </div>
     </div>
   );
