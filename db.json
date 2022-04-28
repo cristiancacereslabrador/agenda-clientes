@@ -1,0 +1,45 @@
+{
+  "clientes": [
+    {
+      "nombre": "Christopher",
+      "empresa": "ChrisCacVer",
+      "email": "chritophervcaceresv@gmail.com",
+      "telefono": "123456789",
+      "notas": "nota1",
+      "id": 1
+    },
+    {
+      "nombre": "Cristian",
+      "empresa": "Caceres Corp",
+      "email": "cristianvianey@gmail.com",
+      "telefono": "987654321",
+      "notas": "nota2",
+      "id": 2
+    },
+    {
+      "nombre": "Vianey",
+      "empresa": "Labrador Corp",
+      "email": "c.caceres@hotmail.es",
+      "telefono": "123456789",
+      "notas": "nota3",
+      "id": 3
+    },
+    {
+      "nombre": "Logan",
+      "empresa": "Caceres Corp",
+      "email": "cristiancacereslabrador@gmail.com",
+      "telefono": "987654321",
+      "notas": "nota4",
+      "id": 4
+    },
+    {
+      "nombre": "Fox",
+      "empresa": "X-files",
+      "email": "config@hotmail.com",
+      "telefono": "123456789",
+      "notas": "nota5",
+      "id": 5
+    }
+   
+  ]
+}
