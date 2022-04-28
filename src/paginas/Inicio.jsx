@@ -7,7 +7,7 @@ const Inicio = () => {
   useEffect(() => {
     const obtenerClientesAPI = async () => {
       try {
-        const url = 'https://my-json-server.typicode.com/cristiancacereslabrador/api_crm/clientes'
+        const url = 'https://my-json-server.typicode.com/cristiancacereslabrador/agenda-clientes/clientes'
         const respuesta = await fetch(url);
         const resultado = await respuesta.json();
         setClientes(resultado);
@@ -24,7 +24,8 @@ const Inicio = () => {
     const confirmar = confirm("¿Deseas eliminar este cliente?");
     if (confirmar) {
       try {
-        const url = `https://my-json-server.typicode.com/cristiancacereslabrador/api_crm/clientes/{$id}`;
+        // const url = `${import.meta.env.VITE_API_URL}/{$id}`;
+        const url = `${import.meta.env.VITE_API_URL}/{$id}`;
         const respuesta = await fetch(url, { method: "DELETE" });
         await respuesta.json()
         const arrayClientes = clientes.filter(cliente => cliente.id !== id )

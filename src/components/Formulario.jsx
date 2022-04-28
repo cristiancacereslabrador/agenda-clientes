@@ -31,7 +31,7 @@ const navigate = useNavigate()
 
        if(cliente.id)
        {  // Editando registro
-          const url = `https://my-json-server.typicode.com/cristiancacereslabrador/api_crm/clientes/${cliente.id}`;
+          const url = `${import.meta.env.VITE_API_URL}/${cliente.id}`;
           //PETICION A URL
           respuesta = await fetch(url, {
           method: 'PUT',
@@ -42,7 +42,7 @@ const navigate = useNavigate()
        else
        { 
          //Nuevo Registro
-        const url = "https://my-json-server.typicode.com/cristiancacereslabrador/api_crm/clientes";
+        const url = import.meta.env.VITE_API_URL;
         //PETICION A URL
           respuesta = await fetch(url, {
           method: 'POST',
