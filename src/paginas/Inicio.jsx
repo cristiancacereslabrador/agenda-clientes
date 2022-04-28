@@ -24,8 +24,7 @@ const Inicio = () => {
     const confirmar = confirm("¿Deseas eliminar este cliente?");
     if (confirmar) {
       try {
-        // const url = `${import.meta.env.VITE_API_URL}/{$id}`;
-        const url = `${import.meta.env.VITE_API_URL}/{$id}`;
+        const url = `${import.meta.env.VITE_API_URL}/${id}`;
         const respuesta = await fetch(url, { method: "DELETE" });
         await respuesta.json()
         const arrayClientes = clientes.filter(cliente => cliente.id !== id )
